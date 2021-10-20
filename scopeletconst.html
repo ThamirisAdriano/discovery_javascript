@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../js/style.css" />
+
+<body>
+    <header>
+        <div class="menu">
+          <li><a href="../index.html">Escopo com var</a></li>
+        </div>
+      </header>
+  <h2>Scope let const</h2>
+  <p>Escopo determina a visibilidade de alguma variável no JS.</p>
+  <p>Toda vez que criarmos declaraçãpo de bloco, criamos um novo escopo.</p>
+  <p>const e let são locais e só funcionam no escopo onde foram criadas.</p>
+</body>
+
+<script>
+  {
+    let y = 0;
+    console.log(">existe y", y);
+  }
+
+  //console.log('>existe y depois do bloco?', y) da erro pois ele não está dentro do escopo.
+</script>

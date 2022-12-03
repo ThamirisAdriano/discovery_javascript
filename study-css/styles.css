@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+
+    grid-template-rows: 60px 1fr 40px;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+
+.header .layout-template {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+
+
+.fraud-disclaimer {
+    background-color: #cdf8f4;
+    padding: 4px;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+
+}
+
+.nav{
+    color: #1f2125;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.main{
+    margin-top: 60px;
+}
+
+header {
+    grid-area: header;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 8px;
+}
+
+main {
+    grid-area: main;
+}
+
+
+.first-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.message h2{
+    padding: 0 0 15px;
+    margin-top: 2px;
+    text-rendering: optimizeLegibility;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    color: #1f2125;
+}
+
+.message p {
+    color: #1f2125;
+    font-size: 24px;
+}
+
+
+aside {
+    grid-area: aside;
+    
+}
+footer {
+    grid-area: footer;
+    background-color: gray;
+}

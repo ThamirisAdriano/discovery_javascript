@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="../js/style.css">
+
+<body>
+
+    <header>
+        <div class="menu">
+          <li><a href="../index.html">Home</a></li>
+        </div>
+      </header>
+    
+    <h2>Scope var</h2>
+<p>  Vamos iniciar um bloco <br>
+
+    {
+        /*aqui dentro é um bloco e posso colocar
+        qualquer código */ <br>
+    } // aqui fechamos o bloco <br>
+    
+    //o bloco tb criará um novo escopo. <br> Chamamos de block-scoped
+    </p>
+
+    <p> var é global e poderá funcionar fora de um escopo de bloco</p>
+    <p>hoisting - elevação: O JS pega a variável por debaixo dos panos e eleva ela antes da linha do código que está a chamando.</p>
+    
+</body>
+
+<script> // escopo global
+
+
+console.log('> existe x antes do bloco?', x)
+
+{
+    var x = 0 // escopo local
+}
+
+console.log('> existe x depois do bloco?', x)
+
+</script> 

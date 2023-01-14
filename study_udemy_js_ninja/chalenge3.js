@@ -1,5 +1,6 @@
 var myvar = function () {
-  return "Variável Myvar";
+  return "Variavel Myvar";
 };
 myvar;
 myvar();
+console.log(myvar())
